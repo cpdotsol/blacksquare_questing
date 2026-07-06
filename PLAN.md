@@ -95,6 +95,17 @@ PointsLedger (append-only, for auditability)
 - Multi-tenant / white-label support
 - Discord (or other) SSO integration
 
-## 7. Next steps
+## 7. Visual Identity
 
-Once this plan is approved, the next step is scaffolding the Next.js project: Prisma schema, auth setup, and empty pages for the landing page, member dashboard, and admin review queue.
+Based on the BlackSquare brand assets (logo + banner):
+
+- **Palette**: near-black background (`#0A0A0A`–`#000000`), white/off-white text and line work, no accent color by default — pure monochrome. If a highlight color is needed for CTAs/status (e.g. "approved"), introduce a single accent sparingly rather than a full color system.
+- **Mark**: the black 3D cube is the brand anchor — use it as a favicon/loading motif and echo its geometry (sharp edges, subtle top-light gradient) in card treatments and section dividers, rather than pasting the logo everywhere.
+- **Wordmark**: "BLACKSQUARE" set in a bold, geometric sans, with the open-square glyph standing in for the "Q" — reuse this treatment for the product name ("Questing" naturally reinforces the square/Q motif already in the brand).
+- **Layout language from the banner**: vertical strip/column composition (alternating image and dark panels) translates well to landing-page section dividers or the quest carousel's card rhythm.
+- **Tone**: "THE SIGNAL IN A WORLD OF NOISE" — minimal, high-contrast, no clutter. This reinforces the "don't make this complicated" brief: a clean monochrome dashboard, not a busy gamified UI.
+- **Asset handling**: once real logo/banner files are added to the repo, they'll live under `public/branding/` (e.g. `logo.png`, `banner.png`) and be wired into the landing page header/hero and favicon during scaffolding.
+
+## 8. Next steps
+
+Once this plan is approved, the next step is scaffolding the Next.js project: Prisma schema, auth setup, Tailwind theme matching the visual identity above, and empty pages for the landing page, member dashboard, and admin review queue.
